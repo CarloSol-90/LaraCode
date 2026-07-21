@@ -21,7 +21,7 @@ Este documento es la fuente de verdad operativa del desarrollo de LaraCode. Solo
 
 | ID | Tarea | Estado | Plan |
 | --- | --- | --- | --- |
-| 001 | Publicación inicial profesional | En curso | [Ver plan](tasks/001-publicacion-inicial.md) |
+| 001 | Publicación inicial profesional | Completada | [Ver plan](tasks/001-publicacion-inicial.md) |
 | 002 | Recorrido guiado de una petición VILT | Pendiente | Por crear al iniciar la tarea |
 
 ## Regla de enfoque

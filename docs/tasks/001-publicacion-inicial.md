@@ -1,6 +1,6 @@
 # Tarea 001 — Publicación inicial profesional
 
-**Estado:** En curso
+**Estado:** Completada
 
 **Rama:** `main` (publicación inicial excepcional)
 
@@ -43,8 +43,8 @@ Publicar por primera vez LaraCode en GitHub con una presentación profesional, d
 - [x] Ejecutar tests y comprobaciones de calidad.
 - [x] Revisar los archivos que entrarán en el commit.
 - [x] Configurar `origin` con el repositorio correcto.
-- [ ] Crear el commit de la tarea.
-- [ ] Publicar `main` y verificar el upstream.
+- [x] Crear el commit de la tarea.
+- [x] Publicar `main` y verificar el upstream.
 
 ## Criterios de aceptación
 
@@ -70,4 +70,4 @@ git status
 
 ## Resultado
 
-Se completará tras validar el push y se registrarán aquí el commit publicado y cualquier incidencia real.
+Tarea completada. El commit `35d53b8` (`docs: prepare LaraCode initial publication`) se publicó en `origin/main`, configurando la rama local `main` para seguir la rama remota. Todas las verificaciones previstas finalizaron correctamente.
