@@ -1,60 +1,92 @@
-# LaraCode
+<div align="center">
+  <img src="public/images/laracode-logo.png" alt="LaraCode — Aprende, practica y domina" width="420">
 
-> Aprende Laravel programando.
+  # LaraCode
 
-LaraCode es una aplicación web educativa y gamificada que se construirá progresivamente para aprender desarrollo full stack. Es, al mismo tiempo, el proyecto de aprendizaje y la futura herramienta para seguir aprendiendo Laravel. Estado actual: **preparación inicial**; todavía no existe dominio propio.
+  **Aprende Laravel programando.**
 
-## Objetivos
+  Proyecto educativo full stack construido paso a paso con Laravel, Vue, Inertia y Tailwind CSS.
+</div>
 
-- Aprender el stack VILT (Vue, Inertia, Laravel y Tailwind).
-- Crear una plataforma práctica para aprender Laravel.
-- Construir poco a poco, sin delegar todo el código funcional a la IA.
+---
 
-## Stack instalado
+## Sobre el proyecto
 
-| Tecnología | Versión instalada | Responsabilidad |
-| --- | ---: | --- |
-| PHP | 8.4.20 | Lenguaje del backend |
-| Laravel | 13.20.0 | Framework, rutas, HTTP, Eloquent y servicios |
-| Vue | 3.5.40 | Interfaz mediante Composition API |
-| Inertia | 3.1.1 / Vue 3.6.1 | Une Laravel y Vue sin API separada |
-| Tailwind CSS | 4.3.3 | Estilos utilitarios |
-| TypeScript | 5.9.3 | Tipado del frontend |
-| Vite | 8.1.5 | Desarrollo y compilación de recursos |
-| MySQL | 8.0.30 | Persistencia de desarrollo |
-| Pest | 4.7.5 | Tests |
-| Laravel Pint | 1.29.3 | Formato PHP |
-| Laravel Boost | 2.4.13 | Contexto, guías, skills y MCP para Codex |
+LaraCode tiene un doble propósito: aprender desarrollo full stack de forma práctica y construir progresivamente una plataforma que ayude a otras personas a aprender Laravel. No es una demostración generada de una sola vez; cada funcionalidad se estudia, diseña, implementa y prueba como una tarea independiente.
 
-El starter kit también incluye Fortify 1.37.2 para autenticación, ESLint 9.39.5, Prettier 3.9.5, Vue TSC 2.2.12, Wayfinder y componentes shadcn-vue/Reka UI oficiales del scaffold.
+El proyecto es personal y está pensado para reflejar una evolución profesional: decisiones documentadas, alcance controlado, commits intencionales y calidad verificable.
 
-## Requisitos
+## Estado actual
 
-- PHP 8.3 o posterior con PDO MySQL, mbstring, openssl, tokenizer, XML, ctype, curl, fileinfo y bcmath.
-- Composer 2 (detectado: 2.10.2).
-- Node.js compatible con Vite 8; usar una versión LTS vigente compatible. Detectado: 24.15.0.
-- npm compatible (detectado: 11.12.1).
-- MySQL 8 o compatible (detectado: 8.0.30).
-- Git (detectado: 2.37.3).
+**Fase 0 — Entorno base completado.**
 
-## Instalación
+- Stack VILT instalado y funcionando.
+- Autenticación oficial con registro, login y recuperación de contraseña.
+- MySQL configurado con migraciones iniciales.
+- Welcome personalizada con la identidad de LaraCode.
+- Tests, formato, lint, análisis estático y build configurados.
+- Laravel Boost integrado para que Codex actúe como mentor técnico.
+
+Todavía no se han implementado cursos, lecciones, ejercicios, progreso ni gamificación.
+
+## Stack
+
+| Tecnología | Función |
+| --- | --- |
+| PHP 8.4 y Laravel 13 | Backend, rutas, autenticación, Eloquent y lógica de aplicación |
+| Vue 3 y TypeScript | Interfaz mediante Composition API y `<script setup>` |
+| Inertia 3 | Comunicación entre Laravel y Vue sin una API separada |
+| Tailwind CSS 4 | Diseño responsive y sistema visual |
+| Vite 8 | Desarrollo y compilación del frontend |
+| MySQL 8 | Persistencia en desarrollo |
+| Pest 4 | Tests automatizados |
+| Pint, ESLint, Prettier y Larastan | Formato y calidad de código |
+| Laravel Boost | Contexto y herramientas Laravel para Codex |
+
+## Arquitectura
+
+```text
+Navegador
+   ↓
+Vue + TypeScript
+   ↓
+Inertia
+   ↓
+Rutas, middleware y controladores de Laravel
+   ↓
+Eloquent
+   ↓
+MySQL
+```
+
+LaraCode es un monolito Laravel con Inertia. Las páginas normales no utilizan una API REST separada.
+
+## Instalación local
+
+### Requisitos
+
+- PHP 8.3 o superior.
+- Composer 2.
+- Node.js y npm compatibles con Vite 8.
+- MySQL 8 o compatible.
+
+### Preparación
 
 ```bash
-git clone <url-del-repositorio> laracode
-cd laracode
+git clone git@github.com:CarloSol-90/LaraCode.git
+cd LaraCode
 composer install
 npm install
-copy .env.example .env
+```
+
+En Windows:
+
+```powershell
+Copy-Item .env.example .env
 php artisan key:generate
 ```
 
-En macOS/Linux, sustituye `copy` por `cp`. Configura en `.env` las variables `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME` y `DB_PASSWORD`. Crea la base desde un cliente MySQL:
-
-```sql
-CREATE DATABASE laracode CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-Después:
+Configura las credenciales de MySQL en `.env`, crea una base llamada `laracode` y ejecuta:
 
 ```bash
 php artisan migrate
@@ -63,19 +95,19 @@ npm run build
 
 ## Desarrollo
 
-Terminal del backend:
+Con Laragon, inicia Apache y MySQL y abre:
 
-```bash
-php artisan serve
+```text
+http://laracode.test
 ```
 
-Terminal del frontend:
+Para recompilación automática del frontend:
 
 ```bash
 npm run dev
 ```
 
-El comando combinado oficial también inicia el listener de colas:
+También se puede iniciar todo mediante el comando combinado:
 
 ```bash
 composer run dev
@@ -92,49 +124,35 @@ npm run types:check
 npm run build
 ```
 
-En Windows puede ejecutarse Pint con `vendor\bin\pint.bat`. `composer test` agrupa Pint, Larastan y los tests de backend.
+## Trabajo por tareas
 
-## Estructura relevante
+El desarrollo se organiza mediante tareas pequeñas, numeradas y verificables:
 
-- `app/`: código PHP y acciones/controladores del scaffold.
-- `config/`: configuración de Laravel y Fortify.
-- `database/`: migraciones, factories y seeders iniciales.
-- `resources/js/`: páginas, layouts y componentes Vue/TypeScript.
-- `resources/css/`: entrada de Tailwind.
-- `routes/`: rutas web, autenticación/settings y consola.
-- `tests/`: tests Pest unitarios y de feature.
-- `docs/`: visión, arquitectura, aprendizaje y decisiones.
-- `.agents/` y `.codex/`: integración generada por Boost.
+1. Consultar el índice en [`docs/TASKS.md`](docs/TASKS.md).
+2. Crear un plan en `docs/tasks/NNN-descripcion.md` antes de implementar.
+3. Trabajar en una rama `task/NNN-descripcion`.
+4. Ejecutar las comprobaciones relacionadas.
+5. Actualizar el estado y el diario de desarrollo.
+6. Integrar la tarea solo cuando sus criterios de aceptación estén completos.
 
-## Arquitectura VILT
+## Documentación
 
-El navegador visita una ruta Laravel; middleware y controlador procesan la petición; Eloquent accederá a MySQL cuando haya datos; Inertia entrega props a una página Vue; Vue renderiza la interfaz y Tailwind la presenta. No hay una API REST separada para las páginas normales.
-
-## Autenticación
-
-El starter kit oficial usa Laravel Fortify e incluye registro, inicio/cierre de sesión, recuperación de contraseña, verificación de correo, confirmación de contraseña, autenticación de dos factores, passkeys y ajustes de perfil/seguridad. No hay usuarios ni credenciales ficticias.
-
-## Estado
-
-Implementado:
-
-- Entorno base y starter kit VILT.
-- Autenticación base.
-- Tests iniciales y herramientas de calidad.
-- Integración de Laravel Boost.
-- Documentación inicial.
-
-Pendiente:
-
-- Diseño funcional y dominio.
-- Cursos, lecciones, ejercicios y progreso.
-- Gamificación y administración.
-- PWA.
+- [Visión del proyecto](docs/PROJECT_BRIEF.md)
+- [Arquitectura](docs/ARCHITECTURE.md)
+- [Plan de aprendizaje](docs/LEARNING_PLAN.md)
+- [Hoja de ruta](docs/ROADMAP.md)
+- [Decisiones](docs/DECISIONS.md)
+- [Diario de desarrollo](docs/DEV_JOURNAL.md)
+- [Índice de tareas](docs/TASKS.md)
 
 ## Filosofía educativa
 
-Codex es un mentor. Las funcionalidades se dividen en pasos pequeños: primero explicación y diagnóstico, después código escrito por el alumno, revisión, pistas y tests. La velocidad no sustituye a la comprensión.
+Codex actúa como mentor: explica los conceptos, propone pasos pequeños, revisa el código y ofrece pistas progresivas. El código funcional se construye con participación directa del autor para priorizar comprensión sobre velocidad.
 
 ## Próximo paso
 
-> Recorrer y comprender el proyecto generado antes de crear funcionalidades.
+> Recorrer la estructura generada y seguir una petición desde una ruta Laravel hasta un componente Vue antes de crear el dominio de LaraCode.
+
+## Autor
+
+Proyecto personal de [Carlos Soler](https://github.com/CarloSol-90).
