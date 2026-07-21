@@ -130,7 +130,7 @@ El desarrollo se organiza mediante tareas pequeñas, numeradas y verificables:
 
 1. Consultar el índice en [`docs/TASKS.md`](docs/TASKS.md).
 2. Crear un plan en `docs/tasks/NNN-descripcion.md` antes de implementar.
-3. Trabajar en una rama `task/NNN-descripcion`.
+3. Trabajar en una rama `NNN-descripcion`, comenzando siempre por el número del plan.
 4. Ejecutar las comprobaciones relacionadas.
 5. Actualizar el estado y el diario de desarrollo.
 6. Integrar la tarea solo cuando sus criterios de aceptación estén completos.
