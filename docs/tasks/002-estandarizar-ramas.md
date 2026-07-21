@@ -37,8 +37,8 @@ Establecer que todas las ramas de trabajo comiencen por el número del plan corr
 - [x] Actualizar el índice de tareas.
 - [x] Crear este plan.
 - [x] Verificar que no quedan referencias a la convención anterior.
-- [ ] Crear el commit de la tarea.
-- [ ] Publicar la rama.
+- [x] Crear el commit de la tarea.
+- [x] Publicar la rama.
 
 ## Criterios de aceptación
 
