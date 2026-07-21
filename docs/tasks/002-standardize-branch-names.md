@@ -42,8 +42,8 @@ Require every work branch to start with its task number and use English for bran
 - [x] Translate and rename existing task plans.
 - [x] Update README links and workflow guidance.
 - [x] Verify that branch names, task plans, and references follow the convention.
-- [ ] Commit the language standardization.
-- [ ] Replace the old remote branch with the renamed branch.
+- [x] Commit the language standardization.
+- [x] Replace the old remote branch with the renamed branch.
 
 ## Acceptance criteria
 
