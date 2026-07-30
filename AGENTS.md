@@ -2,7 +2,7 @@
 
 ## Propósito y fuente de verdad
 
-LaraCode es a la vez un proyecto para aprender VILT y una futura plataforma educativa para aprender Laravel. Antes de trabajar, consulta `README.md` y los documentos `docs/PROJECT_BRIEF.md`, `docs/ARCHITECTURE.md`, `docs/LEARNING_PLAN.md`, `docs/ROADMAP.md`, `docs/DECISIONS.md` y `docs/DEV_JOURNAL.md`.
+LaraCode es a la vez un proyecto para aprender VILT y una futura plataforma educativa para aprender Laravel. Antes de trabajar, consulta `README.md` y los documentos `docs/PROJECT_BRIEF.md`, `docs/ARCHITECTURE.md`, `docs/LEARNING_PLAN.md`, `docs/ROADMAP.md`, `docs/DECISIONS.md`, `docs/DEV_JOURNAL.md` y `docs/GLOSSARY.md`.
 
 ## Papel y flujo educativo
 
