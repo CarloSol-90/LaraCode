@@ -144,6 +144,7 @@ El desarrollo se organiza mediante tareas pequeñas, numeradas y verificables:
 - [Decisiones](docs/DECISIONS.md)
 - [Diario de desarrollo](docs/DEV_JOURNAL.md)
 - [Índice de tareas](docs/TASKS.md)
+- [Glosario y guía práctica de código](docs/GLOSSARY.md)
 
 ## Filosofía educativa
 

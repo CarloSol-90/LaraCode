@@ -23,7 +23,7 @@ La conexión/migración MySQL queda condicionada a iniciar el servidor local.
 
 ## Fase 2 — Primera funcionalidad guiada
 
-- [ ] Elegir un recurso sencillo
+- [x] Elegir un recurso sencillo: primera ruta de aprendizaje
 - [ ] Diseñar su tabla
 - [ ] Crear migración
 - [ ] Crear modelo
@@ -33,6 +33,8 @@ La conexión/migración MySQL queda condicionada a iniciar el servidor local.
 - [ ] Renderizar con Inertia
 - [ ] Mostrar con Vue
 
+El primer contenido será la ruta `Laravel desde cero`, inicialmente con nombre, slug, descripción, nivel y estado de publicación. El progreso no será una columna de la ruta: pertenecerá posteriormente a la relación entre el usuario y el contenido educativo.
+
 ## Fases posteriores
 
 - [ ] Cursos
@@ -40,6 +42,9 @@ La conexión/migración MySQL queda condicionada a iniciar el servidor local.
 - [ ] Lecciones
 - [ ] Ejercicios
 - [ ] Progreso
+- [ ] Varias tecnologías
+- [ ] Prerrequisitos y desbloqueos entre cursos
+- [ ] Rutas combinadas, como Laravel + Vue
 - [ ] Repaso
 - [ ] Gamificación
 - [ ] Administración

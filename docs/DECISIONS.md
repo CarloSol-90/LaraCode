@@ -59,3 +59,15 @@
 **Razones:** Permite aprender MySQL sin hacer dependientes de servicios externos a los tests.
 
 **Consecuencias:** El servidor MySQL debe estar activo para migraciones locales; los tests usan su propia base efímera.
+
+## Decisión 006 — Laravel primero, plataforma extensible después
+
+**Estado:** Aceptada.
+
+**Contexto:** LaraCode se inspira en una experiencia de aprendizaje progresiva y práctica. Laravel será el contenido principal, pero el producto podrá enseñar otras tecnologías en el futuro. Laravel es un framework de PHP, por lo que el dominio no debe confundir frameworks y lenguajes.
+
+**Decisión:** Modelar conceptualmente tecnologías, rutas, cursos, módulos, lecciones y ejercicios como elementos diferenciados. El alcance inicial incluirá únicamente `Laravel desde cero`. Laravel será contenido inicial, no una condición especial escrita en la lógica de la aplicación.
+
+**Razones:** Permite mantener un MVP enfocado sin impedir que posteriormente se incorporen PHP, Vue, JavaScript u otras tecnologías.
+
+**Consecuencias:** No se implementarán todavía múltiples tecnologías, prerrequisitos, desbloqueos ni rutas combinadas. Cuando existan varios cursos, los prerrequisitos se representarán mediante relaciones entre cursos; por ejemplo, Laravel y Vue podrán desbloquear una ruta combinada de Laravel + Vue.

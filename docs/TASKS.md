@@ -23,8 +23,8 @@ This document is the operational source of truth for LaraCode development. Only 
 | ID | Task | Status | Plan |
 | --- | --- | --- | --- |
 | 001 | Professional initial publication | Completed | [View plan](tasks/001-initial-publication.md) |
-| 002 | Standardize branch names and task language | In progress | [View plan](tasks/002-standardize-branch-names.md) |
-| 003 | Guided walkthrough of a VILT request | Pending | Create when the task starts |
+| 002 | Standardize branch names and task language | Completed | [View plan](tasks/002-standardize-branch-names.md) |
+| 003 | Guided walkthrough of a VILT request | In progress | [View plan](tasks/003-trace-vilt-request.md) |
 
 ## Focus rule
 
