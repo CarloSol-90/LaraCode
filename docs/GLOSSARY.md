@@ -412,3 +412,14 @@ Esta lista no significa que los conceptos estén aprendidos; indica vocabulario 
 - Queue y Job.
 - Service Provider.
 - Transacción de base de datos.
+
+## Vocabulario del plan maestro (previsto)
+
+- **Exercises:** práctica, formatos, intentos y feedback; genera evidencia.
+- **Assessment:** evaluación que consume evidencia y recomienda práctica.
+- **Habilidad:** competencia concreta a la que se asocia evidencia y una estimación de dominio.
+- **Dominio 0–100:** estimación por habilidad; sin evaluar si falta evidencia, distinta del progreso y los puntos.
+- **Dificultad 1–5:** nivel del reto; no equivale a seniority ni a tramos automáticos del dominio.
+- **Rúbrica:** criterios explícitos para revisar una solución abierta.
+- **Monolito modular:** aplicación única con responsabilidades delimitadas; no exige carpetas anticipadas.
+- **LaraCodepedia:** referencia pública gratuita con fuentes oficiales asociadas a versión.

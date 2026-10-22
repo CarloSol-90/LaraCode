@@ -18,11 +18,11 @@ El proyecto es personal y está pensado para reflejar una evolución profesional
 
 ## Estado actual
 
-**Fase 0 — Entorno base completado.**
+**Base VILT existente; dominio educativo todavía sin implementar.**
 
 - Stack VILT instalado y funcionando.
 - Autenticación oficial con registro, login y recuperación de contraseña.
-- MySQL configurado con migraciones iniciales.
+- MySQL previsto en configuración; tests aislados con SQLite en memoria.
 - Welcome personalizada con la identidad de LaraCode.
 - Tests, formato, lint, análisis estático y build configurados.
 - Laravel Boost integrado para que Codex actúe como mentor técnico.
@@ -152,8 +152,20 @@ Codex actúa como mentor: explica los conceptos, propone pasos pequeños, revisa
 
 ## Próximo paso
 
-> Recorrer la estructura generada y seguir una petición desde una ruta Laravel hasta un componente Vue antes de crear el dominio de LaraCode.
+> Revisar el plan maestro y retomar la tarea 004: persistencia de la primera ruta de aprendizaje, sin añadir todavía interfaz. El recorrido VILT ya se registró en la tarea 003.
 
 ## Autor
 
 Proyecto personal de [Carlos Soler](https://github.com/CarloSol-90).
+
+## Plan maestro
+
+La plataforma prevista combina formación estructurada, casos profesionales, siete formatos de ejercicios, evaluación adaptativa de cinco niveles y dominio 0–100 por habilidad. El MVP incluye LaraCodepedia gratuita, entrevistas técnicas, pruebas prácticas y gamificación básica. Nada de ello está implementado aún.
+
+Monolito modular como dirección, conservando las carpetas Laravel existentes. Exercises produce evidencia; Assessment estima dominio y recomienda práctica. Free/Pro y AWS quedan para después del MVP. Los nombres exactos de los siete formatos son una propuesta pendiente de validar; la fórmula adaptativa aún no está definida.
+
+- [Auditoría del código](docs/AUDIT.md)
+- [Fuentes oficiales y versiones](docs/OFFICIAL_DOCS.md)
+- [Verificaciones de esta actualización](docs/VALIDATION.md)
+
+El contrato completo del MVP está en PROJECT_BRIEF y su secuencia en ROADMAP. No se crea infraestructura ni funcionalidad de dominio en esta actualización. Los PR requieren revisión; no hacer merge a main sin aprobación.

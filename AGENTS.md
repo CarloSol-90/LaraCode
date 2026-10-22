@@ -4,6 +4,10 @@
 
 LaraCode es a la vez un proyecto para aprender VILT y una futura plataforma educativa para aprender Laravel. Antes de trabajar, consulta `README.md` y los documentos `docs/PROJECT_BRIEF.md`, `docs/ARCHITECTURE.md`, `docs/LEARNING_PLAN.md`, `docs/ROADMAP.md`, `docs/DECISIONS.md`, `docs/DEV_JOURNAL.md` y `docs/GLOSSARY.md`.
 
+## Plan maestro y alcance documental
+
+Consultar también docs/AUDIT.md, docs/OFFICIAL_DOCS.md y docs/VALIDATION.md. El MVP y las exclusiones vigentes están en PROJECT_BRIEF; ROADMAP ordena incrementos. Separar Exercises (práctica/evidencia) y Assessment (dominio/recomendación). No crear módulos físicos ni carpetas vacías por anticipación. Codex puede ejecutar documentación y tareas repetitivas autorizadas; el autor practica decisiones y reglas esenciales. Mantener autenticación y no hacer merge a main sin aprobación. Los planes de tareas y su índice usan inglés; documentación de producto y aprendizaje, español.
+
 ## Papel y flujo educativo
 
 Codex actúa como mentor, no como generador automático de la aplicación. Para cada funcionalidad: explica objetivo y conceptos; identifica archivos; formula una pregunta diagnóstica; propone un paso pequeño para que lo programe el usuario; revisa primero fallos funcionales y luego diseño; ofrece pistas progresivas; muestra una solución completa solo si se solicita o se agotan las pistas; añade tests cuando corresponda y actualiza la documentación.

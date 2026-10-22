@@ -131,3 +131,23 @@ Cada tema conserva este registro: **Fecha:** — · **Qué entendí:** — · **
 - [ ] Repaso
 - [ ] Administración
 - [ ] PWA
+
+## Método de trabajo acordado
+
+Las casillas anteriores son objetivos, no prueba de dominio. Usar la evidencia del diario para evitar repetir lo ya practicado. Antes de una tarea: pregunta diagnóstica y explicación del resultado; después: implementa un paso pequeño, prueba, explica el recorrido sin ayuda y registra dudas. Revisar evidencias en ciclos orientativos de dos semanas, sin fechas de entrega ficticias.
+
+El autor practica decisiones, modelo de datos, reglas de negocio, seguridad y tests que explican comportamiento. Codex puede delegarse documentación, formato, inventarios y preparación repetitiva autorizada; cualquier generación se revisa y debe poder explicarse. No atribuir comprensión por haber recibido código. Pistas progresivas antes de soluciones completas para ejercicios de aprendizaje.
+
+## Aprendizaje ligado al plan maestro
+
+| Incremento | Qué practicar | Evidencia |
+| --- | --- | --- |
+| LearningPath y formación | Tipos de columna, índices, Eloquent, factories, petición VILT | Explicar tabla/modelo/factory y demostrar persistencia con tests. |
+| Exercises | Formatos, validación y feedback | Crear un ejemplo de cada formato y explicar su criterio de corrección. |
+| Assessment | Habilidades, dificultad 1–5 y dominio 0–100 | Resolver a mano ejemplos de política antes de programar y probar límites, duplicados y ausencia de evidencia. |
+| LaraCodepedia | Fuentes oficiales versionadas y ejemplos propios | Explicar una decisión citando versión y sección compatible. |
+| Preparación laboral | Casos, entrevistas y pruebas prácticas | Defender una solución, alternativas, límites y tests sin depender de IA. |
+| Calidad y gamificación | Autorización, accesibilidad y medidas de progreso | Demostrar acceso correcto y distinguir puntos, avance y dominio. |
+| AWS posterior | Despliegue, IAM, logs y costes | Laboratorio reproducible con presupuesto y retirada de recursos acordados. |
+
+Próxima sesión: retomar tarea 004. Diagnóstico: ¿qué diferencia hay entre una ruta de aprendizaje y el progreso de un usuario en ella? El aprendizaje de arquitectura se aplica cuando aparezca una necesidad real; no memorizar patrones ni crear capas para practicar sus nombres.
