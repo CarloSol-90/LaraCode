@@ -71,3 +71,43 @@
 **Razones:** Permite mantener un MVP enfocado sin impedir que posteriormente se incorporen PHP, Vue, JavaScript u otras tecnologías.
 
 **Consecuencias:** No se implementarán todavía múltiples tecnologías, prerrequisitos, desbloqueos ni rutas combinadas. Cuando existan varios cursos, los prerrequisitos se representarán mediante relaciones entre cursos; por ejemplo, Laravel y Vue podrán desbloquear una ruta combinada de Laravel + Vue.
+
+## Decisión 007 — Contrato del MVP ampliado
+
+**Estado:** Aceptada por la petición de 2026-10-22; concreta y amplía el alcance inicial de la decisión 006.
+
+**Decisión:** Formación Laravel primero, casos profesionales, siete formatos, evaluación adaptativa de cinco niveles, dominio 0–100 por habilidad, LaraCodepedia gratuita, entrevistas técnicas, pruebas prácticas y gamificación básica dentro del MVP.
+
+**Consecuencias:** Entrega por incrementos; el primer recorrido no es todo el MVP. Los nombres concretos de formatos son propuesta pendiente de validar y la fórmula de evaluación queda pendiente. No se infieren de referencias opacas de la conversación anterior.
+
+## Decisión 008 — Separar Exercises y Assessment
+
+**Estado:** Aceptada como límite conceptual, sin módulos físicos todavía.
+
+**Decisión:** Exercises gestiona práctica y evidencia; Assessment estima dominio y recomienda. Progreso, dominio y puntos son medidas distintas. Sin evidencia significa sin evaluar.
+
+**Consecuencias:** Política determinista, trazable y versionada antes de automatismos complejos. Umbrales y fórmula requieren tarea con ejemplos y tests. No prometer certificación ni validez psicométrica.
+
+## Decisión 009 — Modularidad y SOLID pragmáticos
+
+**Estado:** Aceptada; desarrolla las decisiones 002 y 004.
+
+**Decisión:** Mantener monolito Laravel 13 + Vue 3/TS + Inertia 3 + Tailwind 4 + MySQL + Pest; conservar estructura y autenticación. Extraer responsabilidades cuando el código real lo justifique.
+
+**Consecuencias:** Sin carpetas vacías, microservicios, API separada, repositorios genéricos ni interfaces por rutina. Las dependencias ya satisfacen las versiones mayores objetivo; no actualizarlas en esta tarea documental.
+
+## Decisión 010 — Aprendizaje guiado con delegación explícita
+
+**Estado:** Aceptada; precisa la decisión 003.
+
+**Decisión:** El autor practica decisiones y reglas esenciales; Codex prepara tareas repetitivas autorizadas y revisa. La petición actual autoriza ejecutar la actualización documental completa.
+
+**Consecuencias:** Mantener preguntas diagnósticas y evidencias; no exigir que el autor redacte manualmente toda la documentación ni confundir código generado con comprensión.
+
+## Decisión 011 — Referencias y producto futuro
+
+**Estado:** Aceptada.
+
+**Decisión:** Contenidos con fuentes oficiales asociadas a versión y fecha/revisión. LaraCodepedia gratuita. Free/Pro queda futuro, sin precios ni cobros; AWS será laboratorio posterior.
+
+**Consecuencias:** Revisar compatibilidad al actualizar contenido; no copiar documentación íntegra ni aprovisionar infraestructura ahora. Propuestas comerciales y límites de costes requieren decisiones específicas.

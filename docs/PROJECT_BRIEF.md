@@ -1,37 +1,46 @@
 # Visión del proyecto
 
-## Problema
+LaraCode combina el aprendizaje de su autor, desarrollador full stack junior, con una plataforma educativa orientada a la práctica profesional. La primera formación será **Laravel desde cero**. Se conserva la identidad: Lara, pixel art, rojo y blanco y tono cercano y técnico.
 
-Aprender Laravel suele implicar teoría desconectada, tutoriales pasivos, copia de código sin comprensión, poca práctica deliberada y dificultad para recordar conceptos.
+## Estado y alcance
 
-## Solución
+Actualmente existe un starter VILT con autenticación y personalizaciones. Las capacidades siguientes son planificación, no funcionalidades entregadas. Véase [auditoría](AUDIT.md). El brief define alcance, arquitectura responsabilidades, roadmap orden y TASKS ejecución.
 
-LaraCode será una plataforma interactiva para aprender tecnologías de desarrollo mediante rutas guiadas, lecciones cortas, preguntas, completar código, detectar errores, ejercicios prácticos, proyectos, repaso y progreso visible.
+| Área del MVP | Criterio mínimo de aceptación |
+| --- | --- |
+| Formación estructurada | Una ruta Laravel desde cero con curso, módulos, lecciones breves y continuidad del estudio. |
+| Casos profesionales | Al menos un caso con requisitos, restricciones, evidencias y rúbrica, enlazado a habilidades. |
+| Ejercicios | Siete formatos, cada uno con al menos un ejemplo revisado y feedback explicativo. |
+| Evaluación adaptativa | Cinco niveles de dificultad y dominio 0–100 por habilidad, con intentos persistentes, política versionada y recomendación explicable. |
+| LaraCodepedia gratuita | Referencia pública sin pago ni cuenta, búsqueda básica, ejemplos propios y enlaces oficiales asociados a versión. |
+| Preparación laboral | Al menos una entrevista técnica de práctica y una prueba práctica, con consigna, evidencias y rúbrica; sin necesidad de IA ni videollamada. |
+| Progreso y gamificación | Continuidad, habilidades y progreso visibles; puntos y logros básicos separados del dominio. |
+| Calidad | Autenticación conservada, autorización, validación, accesibilidad básica y pruebas del recorrido educativo. |
 
-Laravel será la tecnología principal y el único contenido del alcance inicial. La experiencia se inspirará en patrones educativos como el aprendizaje progresivo, las sesiones breves y el progreso visible, sin copiar la identidad ni la interfaz de otras plataformas.
+El primer incremento navegable no equivale al MVP completo. Entrevistas, pruebas prácticas y siete formatos no se relegan silenciosamente a después del MVP.
 
-La plataforma deberá poder incorporar en el futuro PHP, Vue, JavaScript u otras tecnologías sin convertir Laravel en una condición especial dentro del código. Las rutas combinadas podrán utilizar cursos anteriores como prerrequisitos; por ejemplo, completar Laravel y Vue antes de desbloquear una ruta de Laravel + Vue.
+## Siete formatos
 
-## Público
+El detalle de la conversación anterior no se recuperó. Esta taxonomía es una **propuesta operativa pendiente de validar antes de implementar Exercises**, no una transcripción del acuerdo anterior:
 
-Inicialmente se dirige a su creador, personas que comienzan con PHP y Laravel, desarrolladores frontend que quieren aprender full stack y profesionales que desean reforzar fundamentos de Laravel.
+1. Selección de respuesta.
+2. Completar código.
+3. Ordenar código o pasos.
+4. Detectar y corregir errores.
+5. Predecir resultados o comportamiento.
+6. Explicar y comparar decisiones.
+7. Implementar una solución a un requisito.
 
-## Identidad
+Cada formato incluye enunciado, respuesta o evidencia, criterio de corrección y feedback. Los abiertos requieren rúbrica y pueden necesitar revisión humana: no se promete autocorrección semántica. Casos, entrevistas y pruebas prácticas son contextos que agrupan ejercicios, no formatos adicionales. El MVP no ejecuta código arbitrario enviado por alumnos.
 
-- Nombre: LaraCode.
-- Mascota: Lara.
-- Estética futura: pixel art y bloques inspirados conceptualmente en Laravel.
-- Color principal: rojo sobre fondos principalmente blancos.
-- Carácter: cercano, técnico, divertido y profesional.
+## Evaluación
 
-## Alcance inicial del producto
+Cinco niveles ordinales propuestos: 1 fundamentos, 2 aplicación guiada, 3 autonomía, 4 integración y diagnóstico, 5 criterio profesional. Describen dificultad, no seniority laboral ni certificación.
 
-La primera experiencia educativa será `Laravel desde cero`, formada progresivamente por módulos, lecciones, ejercicios y seguimiento del progreso. Inicialmente no habrá otros lenguajes o frameworks, rutas combinadas ni desbloqueos entre cursos.
+El dominio es una estimación 0–100 **por habilidad**. Sin evidencia se informa **sin evaluar**, no cero. Completar lecciones, ganar puntos y subir de dificultad son medidas distintas. La fórmula, umbrales y mínimos de evidencia se definirán mediante ejemplos y pruebas en una tarea específica; no existe aún una política validada. La recomendación debe explicar su evidencia y reconocer incertidumbre.
 
-## Alcance futuro
+## Después del MVP y límites
 
-Conceptualmente podrá incluir varias tecnologías, rutas de aprendizaje, cursos, módulos, lecciones, ejercicios, intentos, progreso, prerrequisitos, desbloqueos, repaso, rachas, logros, administración de contenido y PWA. **Estas capacidades se incorporarán solo cuando una necesidad real de una fase posterior las justifique.**
+Free/Pro es una posibilidad futura, sin precios ni facturación acordados. LaraCodepedia mantiene su acceso gratuito. Más tecnologías, rutas combinadas, repaso avanzado, PWA e IA necesitan decisiones propias. AWS será un laboratorio posterior de despliegue, observabilidad, seguridad y costes.
 
-## Fuera del MVP
-
-Pagos, suscripciones, aplicación nativa, multijugador, chat, microservicios, ejecución insegura de PHP e inteligencia artificial integrada.
+Sin microservicios, API separada para páginas, pagos, app nativa, chat, multijugador ni ejecutor remoto en el MVP. El alcance es amplio para una persona junior: dividir en cortes pequeños sin fechas ficticias. Reducirlo exige una decisión explícita.
